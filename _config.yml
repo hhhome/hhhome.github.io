@@ -1,6 +1,6 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: hpstrtheme
+title:            浮生如梦
+description:      前端技术博客，分享技术知识，交流学习心得.
+disqus_shortname: hhhome
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
@@ -16,7 +16,7 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:hhhome         
   stackexchange:  
   linkedin:       
   instagram:      
