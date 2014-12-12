@@ -31,7 +31,7 @@ image:
   </header>
   <div class="entry-content">
     {% if post.content contains '<!--more-->' %}
-      {{ post.content | split:'more' | first %}}
+      {{ post.content | split:'more' %}}
       <div style="text-align:right;"><a class="btn btn-info" href="{{ post.url }}">Read more</a></div>
     {% else %}
       {{ post.content }}
