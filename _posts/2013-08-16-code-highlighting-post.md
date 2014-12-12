@@ -16,6 +16,8 @@ image:
 
 To modify styling and highlight colors edit `/assets/less/pygments.less` and compile `main.less` with your favorite preprocessor. Or edit `main.css` if that's your thing, the classes you want to modify all begin with `.highlight`.
 
+<!--more-->
+
 {% highlight css %}
 #container {
     float: left;
@@ -58,7 +60,7 @@ module Jekyll
   end
 end
 {% endhighlight %}
-<!--more-->
+
 
 ### Standard Code Block
 
