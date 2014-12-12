@@ -58,7 +58,7 @@ module Jekyll
   end
 end
 {% endhighlight %}
-
+<!--more-->
 
 ### Standard Code Block
 
