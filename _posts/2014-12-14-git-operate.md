@@ -27,6 +27,8 @@ git pull相当于是从远程获取最新版本并merge到本地。
 
 {% endraw %}
 
+ git fetch：相当于是从远程获取最新版本到本地，不会自动merge  
+ 
 {% raw %}
 
 	git fetch origin master            //从远程的origin的master主分支下载最新的版本到origin/master分支    
