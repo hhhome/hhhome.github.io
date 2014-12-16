@@ -25,17 +25,22 @@ git pull https://github.com/name.git
 
 {% raw %}
 
-git fetch origin master  //从远程的origin的master主分支下载最新的版本到origin/master分支
-git log -p master..origin/master  //比较本地的master分支和origin/master分支的差别
-git merge origin/master  //合并到本地
+git fetch origin master  //从远程的origin的master主分支下载最新的版本到origin/master分支    
+
+git log -p master..origin/master  //比较本地的master分支和origin/master分支的差别    
+
+git merge origin/master  //合并到本地   
+
 
 {% endraw %}
 
 {% raw %}
 
-git fetch origin master:tmp
-git diff tmp 
-git merge tmp
+git fetch origin master:tmp    
+
+git diff tmp     
+
+git merge tmp  
 
 {% endraw %}
 
