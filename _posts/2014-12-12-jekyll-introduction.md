@@ -1,23 +1,33 @@
 ---
 layout: post
-title: Post with a Background Image
-description: "Sample post with a background image CSS override."
+title: jekyll introduction
+description: "jekyll introduction"
 tags: [sample post]
 image:
-  background: triangular.png
+  feature: abstract-3.jpg
 ---
 
-jekyll是一个类似于WordPress简单的免费的Blog生成工具。与WordPress不同的是: jekyll是一个生成静态网页的工具，不需要数据库支持
+jekyll是一个类似于WordPress简单的免费的Blog生成工具。与WordPress不同的是: jekyll是一个生成静态网页的工具，不需要数据库支持,可以配合第三方服务,实现各种功能，例如：
+disqus评论系统 
+jekyllg可以免费部署在Github上，而且可以绑定自己的域名。
 
-{% highlight yaml %}
-image:
-  background: filename.png
-{% endhighlight %}
+jeykyll的优点
+  1）默认支持markdown语法。
+  2）本地文件操作，只要新建了一个文件，刷新一下，页面上就有了发布的文件，无所谓数据库之类的。
+
 
 <!--more-->
+jeykyll 标准目录树
+_config.yml   Jekyll的配置文件
+_includes     include 文件所在的文件夹
+_layouts      模版文件夹
+_posts        自己要发布的内容
+_sites        预览时产生的文件都放在该文件夹中
 
-This little bit of YAML makes the assumption that your background image asset is in the `/images` folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.
+jeykyll 模板全局变量
 
-If you want to set a background image for the entire site just add `background: filename.png` to your `_config.yml` and BOOM --- background images on every page!
-
-<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" about="http://subtlepatterns.com" class="notice">Background images from <span property="dct:title">Subtle Patterns</span> (<a rel="cc:attributionURL" property="cc:attributionName" href="http://subtlepatterns.com">Subtle Patterns</a>) / <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></div>
+|| *变量* || *描述* || 
+|| site || 全站的信息+_config.yml文件中的配置选项 || 
+|| page || 这个变量中包含YAML前置数据,另外加上两个额外的变量值:url和content。 ||
+|| content || 在布局模板文件中，这里变量包含了页面的子视图。这个变量将会把渲染后的内容插入到模板文件中。这个变量不能在文章和页面文件中使用。 ||
+|| paginator || 一旦paginate配置选项被设置了，这个变量才能被使用。 ||
