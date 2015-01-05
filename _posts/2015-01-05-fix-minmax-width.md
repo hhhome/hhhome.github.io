@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 最小宽度，最大高度，最大宽度，最小高度
-description: "meta attribute"
+title: minmax-width-height
+description: "兼容ie6的最小宽度，最大高度，最大宽度，最小高度 css 写法"
 tags: [sample post]
 image:
   feature: abstract-8.jpg
