@@ -65,5 +65,11 @@ git pull相当于是从远程获取最新版本并merge到本地。
 
 {% endraw %}
 
+查看记录
+{% raw %}
+	git log -p <file> #查看每次详细修改
+	git log -p -2 #查看最近两次详细修改
+	git log --stat #查看提交统计信息
+{% endraw %}
 
 
