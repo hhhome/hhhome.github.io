@@ -74,4 +74,12 @@ git pull相当于是从远程获取最新版本并merge到本地。
 	git log --stat //查看提交统计信息
 {% endraw %}
 
+删除空目录
+使用git rm -rf dir 命令删除非空目录之后，本地还是会有空的目录存在，这时候空目录已经是untracked状态了
+然后 再删掉 untracked状态的目录
+{% raw %}
+	git rm -rf dir 
 
+	git clean -fd 
+{% endraw %}
+ 
